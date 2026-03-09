@@ -172,8 +172,9 @@ font-weight: 700;
 
 .store-buttons {
   display: flex;
-  gap: 12px;
   justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 /* Botón 73x22 */
 .store-btn {
@@ -185,6 +186,7 @@ font-weight: 700;
   text-decoration: none;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 8px;
   padding: 6px 10px;
   box-sizing: border-box;
