@@ -166,6 +166,12 @@ font-size: 16px;
 font-weight: 700;
 }
 
+.icon-cs{
+  border-radius: 10px;
+
+}
+
+
 .store-buttons {
   display: flex;
   gap: 12px;
@@ -201,7 +207,7 @@ font-weight: 700;
 
 .store-small {
   font-size: 12px;
-  font-weight: 400;
+  font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
