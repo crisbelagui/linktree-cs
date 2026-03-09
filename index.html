@@ -41,7 +41,7 @@
             </p>
         </section>
 
-         <!-- Apps -->
+         <!-- Descarga -->
           <section class="store-buttons">
             <div class="apps-card">
               <div class="rating">
@@ -52,10 +52,10 @@
               <h3 class="apps-text">¡El mejor tipo de cambio!</h3>
               <div class="store-buttons">
                 
-                <a href="#" class="store-btn" id="btn-play-store" >
-                  <img src="img\descargar.png" alt="Google Play" class="store-icon">
+                <a href="#" class="store-btn" id="btn-descarga" onclick="openStore(event)">
+                  <img src="img/descargar.png" alt="Descargar App" class="store-icon">
                   <div class="store-texts">
-                    <span class="store-small">Descarga aqui</span>
+                    <span class="store-small">Descarga la app</span>
                   </div>
                 </a>
 
@@ -131,6 +131,30 @@
         </a>
     </footer>
   </div>
+
+  <script>
+function openStore(e) {
+
+  e.preventDefault();
+
+  const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+  const playStore = "https://play.google.com/store/apps/details?id=com.cambioseguro.app";
+  const appStore = "https://apps.apple.com/pe/app/cambio-seguro/id1538244004";
+
+  if (/android/i.test(userAgent)) {
+    window.location.href = playStore;
+  } 
+  else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+    window.location.href = appStore;
+  } 
+  else {
+    // fallback si entra desde desktop
+    window.location.href = "https://cambioseguro.com/";
+  }
+
+}
+</script>
 
 </body>
 </html>
