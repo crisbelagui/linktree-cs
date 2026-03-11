@@ -257,10 +257,6 @@ font-weight: 700;
   margin-top: 0px;
 }
 
-.btn-contact * {
-  pointer-events: none;
-}
-
 .btn-contact {
   display: flex;
   justify-content: space-between;
